@@ -25,6 +25,8 @@
 		3043E03116D382E200C70B93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3043E00616D382E200C70B93 /* Foundation.framework */; };
 		3043E03916D382E200C70B93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3043E03716D382E200C70B93 /* InfoPlist.strings */; };
 		3043E03C16D382E200C70B93 /* photoUploadClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3043E03B16D382E200C70B93 /* photoUploadClientTests.m */; };
+		3043E04816D3843E00C70B93 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 3043E04716D3843E00C70B93 /* User.m */; };
+		3043E04B16D387A600C70B93 /* UserListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3043E04A16D387A600C70B93 /* UserListController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,10 @@
 		3043E03816D382E200C70B93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3043E03A16D382E200C70B93 /* photoUploadClientTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = photoUploadClientTests.h; sourceTree = "<group>"; };
 		3043E03B16D382E200C70B93 /* photoUploadClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = photoUploadClientTests.m; sourceTree = "<group>"; };
+		3043E04616D3843E00C70B93 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		3043E04716D3843E00C70B93 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		3043E04916D387A600C70B93 /* UserListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserListController.h; sourceTree = "<group>"; };
+		3043E04A16D387A600C70B93 /* UserListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserListController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,7 @@
 		3043E00A16D382E200C70B93 /* photoUploadClient */ = {
 			isa = PBXGroup;
 			children = (
+				3043E04516D383CD00C70B93 /* Model */,
 				3043E01316D382E200C70B93 /* AppDelegate.h */,
 				3043E01416D382E200C70B93 /* AppDelegate.m */,
 				3043E01C16D382E200C70B93 /* MainStoryboard_iPhone.storyboard */,
@@ -166,6 +173,18 @@
 				3043E03716D382E200C70B93 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3043E04516D383CD00C70B93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3043E04616D3843E00C70B93 /* User.h */,
+				3043E04716D3843E00C70B93 /* User.m */,
+				3043E04916D387A600C70B93 /* UserListController.h */,
+				3043E04A16D387A600C70B93 /* UserListController.m */,
+			);
+			name = Model;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +302,8 @@
 				3043E01516D382E200C70B93 /* AppDelegate.m in Sources */,
 				3043E02416D382E200C70B93 /* MasterViewController.m in Sources */,
 				3043E02716D382E200C70B93 /* DetailViewController.m in Sources */,
+				3043E04816D3843E00C70B93 /* User.m in Sources */,
+				3043E04B16D387A600C70B93 /* UserListController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
