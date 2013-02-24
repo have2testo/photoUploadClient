@@ -27,6 +27,7 @@
 		3043E03C16D382E200C70B93 /* photoUploadClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3043E03B16D382E200C70B93 /* photoUploadClientTests.m */; };
 		3043E04816D3843E00C70B93 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 3043E04716D3843E00C70B93 /* User.m */; };
 		3043E04B16D387A600C70B93 /* UserListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3043E04A16D387A600C70B93 /* UserListController.m */; };
+		3081CFE916DA0CC600028C00 /* HTTPFileUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 3081CFE816DA0CC600028C00 /* HTTPFileUpload.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		3043E04716D3843E00C70B93 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		3043E04916D387A600C70B93 /* UserListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserListController.h; sourceTree = "<group>"; };
 		3043E04A16D387A600C70B93 /* UserListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserListController.m; sourceTree = "<group>"; };
+		3081CFE716DA0CC600028C00 /* HTTPFileUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPFileUpload.h; sourceTree = "<group>"; };
+		3081CFE816DA0CC600028C00 /* HTTPFileUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPFileUpload.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +185,8 @@
 				3043E04716D3843E00C70B93 /* User.m */,
 				3043E04916D387A600C70B93 /* UserListController.h */,
 				3043E04A16D387A600C70B93 /* UserListController.m */,
+				3081CFE716DA0CC600028C00 /* HTTPFileUpload.h */,
+				3081CFE816DA0CC600028C00 /* HTTPFileUpload.m */,
 			);
 			name = Model;
 			path = ..;
@@ -304,6 +309,7 @@
 				3043E02716D382E200C70B93 /* DetailViewController.m in Sources */,
 				3043E04816D3843E00C70B93 /* User.m in Sources */,
 				3043E04B16D387A600C70B93 /* UserListController.m in Sources */,
+				3081CFE916DA0CC600028C00 /* HTTPFileUpload.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +500,7 @@
 				3043E04116D382E200C70B93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3043E04216D382E200C70B93 /* Build configuration list for PBXNativeTarget "photoUploadClientTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +509,7 @@
 				3043E04416D382E200C70B93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

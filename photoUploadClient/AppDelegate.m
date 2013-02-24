@@ -7,12 +7,31 @@
 //
 
 #import "AppDelegate.h"
+#import "MasterViewController.h"
+#import "UserListController.h"
+#import "DetailViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    UserListController *userListController = [[UserListController alloc] initWithUserUrl:@"http://pure-escarpment-3405.herokuapp.com/users.json"];
+    
+    UINavigationController *masterNavigationController = nil;
+    
+    if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        masterNavigationController = (UINavigationController *)self.window.rootViewController;
+    }else if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad){
+        UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
+        UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
+        splitViewController.delegate = (id)navigationController.topViewController;
+        masterNavigationController = (UINavigationController *)splitViewController.viewControllers[0];
+    }
+    
+    MasterViewController *masterViewController = (MasterViewController *)masterNavigationController.topViewController;
+    masterViewController.userListController = userListController;
+    
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
         UINavigationController *navigationController = [splitViewController.viewControllers lastObject];

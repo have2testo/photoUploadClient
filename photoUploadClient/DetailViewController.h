@@ -7,10 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HTTPFileUpload.h"
 
-@interface DetailViewController : UIViewController <UISplitViewControllerDelegate>
+@class User;
 
-@property (strong, nonatomic) id detailItem;
+@interface DetailViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UISplitViewControllerDelegate>
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (strong, nonatomic) User *detailItem;
+
+//@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+
+@property (nonatomic, retain) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldTitle;
+
+- (IBAction)showCamera:(id)sender;
+- (IBAction)postImage:(id)sender;
+
 @end
