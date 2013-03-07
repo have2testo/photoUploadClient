@@ -135,4 +135,9 @@
     }
 }
 
+- (IBAction)updateUserListAction:(id)sender {
+    self.userListController = [[UserListController alloc] initWithUserUrl:@"http://pure-escarpment-3405.herokuapp.com/users.json"];
+    [self.tableView reloadData];
+
+}
 @end

@@ -41,7 +41,6 @@
 {
     NSURL *url = [NSURL URLWithString:userUrl];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-<<<<<<< HEAD
     //Return Value::The downloaded data for the URL request. Returns nil if a connection could not be created or if the download fails.
     NSData *userData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
 
@@ -63,12 +62,6 @@
     } else {
         userObject = [NSJSONSerialization JSONObjectWithData:userData options:NSJSONReadingAllowFragments error:nil];
     }
-    
-=======
-    NSData *userData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-    
-    NSArray *userObject = [NSJSONSerialization JSONObjectWithData:userData options:NSJSONReadingAllowFragments error:nil];
->>>>>>> 81f344de5e1d00f65a90b67da58a25e4c6587ada
     
     self = [self initWithArray:userObject];
     

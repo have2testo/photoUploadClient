@@ -15,5 +15,6 @@
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
 @property (strong, nonatomic) UserListController *userListController;
+- (IBAction)updateUserListAction:(id)sender;
 
 @end
