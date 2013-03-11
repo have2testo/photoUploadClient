@@ -105,4 +105,13 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (void)showModalView
+{
+    UIView *modalView = [[UIView alloc] initWithFrame:self.view.frame];
+    modalView.opaque = NO;
+    modalView.backgroundColor = [UIColor colorWithWhite:1.0f alpha:0.0f];
+    [self.view addSubview:modalView];
+    
+}
+
 @end

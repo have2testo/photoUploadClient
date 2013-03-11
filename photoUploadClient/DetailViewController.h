@@ -16,9 +16,9 @@
 @property (strong, nonatomic) User *detailItem;
 
 //@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldTitle;
 
 @property (nonatomic, retain) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) IBOutlet UITextField *textFieldTitle;
 
 - (IBAction)showCamera:(id)sender;
 - (IBAction)postImage:(id)sender;
