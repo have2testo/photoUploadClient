@@ -38,7 +38,7 @@
 //    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
 //    self.navigationItem.rightBarButtonItem = addButton;
     
-    self.title = NSLocalizedString(@"Listing User", @"Master View Title");
+    self.title = NSLocalizedString(@"なまえ をえらんでください", @"Master View Title");
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
 

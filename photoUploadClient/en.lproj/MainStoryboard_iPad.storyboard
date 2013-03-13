@@ -36,11 +36,13 @@
                                             <action selector="showCamera:" destination="4" id="4KI-vP-cZ8"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="post" id="Lo7-A2-14d">
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="QF5-Ta-2jU"/>
+                                    <barButtonItem systemItem="action" id="Lo7-A2-14d">
                                         <connections>
                                             <action selector="postImage:" destination="4" id="LUY-qi-G6c"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="wOt-bC-slP"/>
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="buG-66-PrV">
@@ -49,13 +51,16 @@
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="QMZ-RH-rcn">
                                 <rect key="frame" x="174" y="20" width="509" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="4" id="hLR-2x-C6F"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="タイトル" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DLl-tT-19k">
                                 <rect key="frame" x="20" y="24" width="146" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
